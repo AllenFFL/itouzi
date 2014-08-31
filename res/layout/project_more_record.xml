@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/record_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_gray_line2" >
+         <TextView
+            android:id="@+id/record_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="20px"
+            android:text="@string/invest_amount"
+            android:textColor="@color/i_black"
+            android:textSize="17sp" />
+          <TextView
+            android:id= "@+id/record_user"
+            android:layout_width= "wrap_content"
+            android:layout_height ="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding= "20px"
+            android:text= "@string/invest_user"
+            android:textColor= "@color/i_black"
+            android:textSize= "17sp" />
+         <TextView
+            android:id= "@+id/record_time"
+            android:layout_width= "wrap_content"
+            android:layout_height ="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding= "20px"
+            android:layout_marginRight="10dp"
+            android:text= "@string/invest_time"
+            android:textColor= "@color/i_black"
+            android:textSize= "17sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/more_record_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:divider="@color/i_gray_line2" />
+
+</LinearLayout>

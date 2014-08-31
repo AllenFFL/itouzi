@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/i_white">
+    <!-- 产品名称 -->
+    <RelativeLayout
+        android:id="@+id/project_gruantor_tab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="17dp"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/blue_corner_rectangle">
+		    <ImageView
+	             android:id="@+id/iv_gruantorTab"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:padding="5dp"
+	             android:layout_marginLeft="2dp"
+	             android:layout_centerVertical="true"
+	             android:background="@drawable/tab_gruante"/>
+		    <TextView 
+		        android:id="@+id/project_ruantorTab"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/iv_gruantorTab"
+		        android:textSize="12sp"
+		        android:textColor="@color/i_white"
+		        android:text="@string/project_gruantee"/>
+     </RelativeLayout>
+     <TextView 
+        android:id="@+id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/project_gruantor_tab"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:gravity="left"
+        android:textSize="17sp"
+        android:textColor="@color/i_black"
+        android:text="@string/project_name"/>
+        <!-- 产品简要 -->
+    <RelativeLayout
+        android:id="@+id/project_submit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:layout_below="@id/project_name" >
+
+			<TextView
+                android:id="@+id/profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="50dp"
+                android:text="@string/project_profit"
+                android:textColor="@color/i_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/profit"
+                android:layout_marginRight="5dp"
+                android:text="00.0"
+                android:textColor="#f06160"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_iprofit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_profit"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@id/tv_profit"
+                android:text="@string/project_percentage"
+                android:textColor="#f06160"
+                android:textSize="13sp" />
+			 <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/project_time"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_iprofit"
+                android:layout_alignLeft="@id/time"
+                android:text="00"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_itime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_iprofit"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tv_time"
+                android:text="@string/project_limit_unit"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"
+                android:text="@string/project_amount"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_iprofit"
+                android:layout_toLeftOf="@id/tv_iamount"
+                android:text="000"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_iamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_iprofit"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/project_amount_unit"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+    </RelativeLayout>
+    <!-- 投资进度圈 -->
+    <com.allen.itouzi.view.CircleProgressView
+        android:id="@+id/project_circle_progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+		android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/project_submit"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android_custom:circleColor="@color/i_gray_back"
+        android_custom:circleProgressColor="@color/i_red"
+        android_custom:textColor="@color/i_red"
+        android_custom:textIsDisplayable="true"
+        android_custom:circleWidth="17dp"
+        android_custom:textSize="13sp" />
+    <!-- 项目标签 -->
+   <LinearLayout
+        android:id="@+id/project_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/project_submit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+		<ImageView
+		    android:id="@+id/project_tab_jixi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/desc_tab"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tab_jixi"/>
+        <TextView
+            android:id="@+id/project_tv_jixi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/i_gray_text"
+            android:text="@string/project_tab_jixi" />
+		<ImageView
+		    android:id="@+id/project_tab_zhuanrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/desc_tab"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tab_linghuo"/>
+        <TextView
+            android:id="@+id/project_tv_zhuanrang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/i_gray_text"
+            android:text="@string/project_tab_zhuanrang" />
+        <ImageView
+		    android:id="@+id/project_tab_benxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/desc_tab"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/tab_benxi"/>
+        <TextView
+            android:id="@+id/project_tv_benxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/i_gray_text"
+            android:text="@string/project_tab_benxi" />
+    </LinearLayout>
+    <View 
+	    android:id="@+id/item_line1"
+	    android:layout_below="@id/project_tab"
+	    android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@color/i_gray_line1"/>
+    <View 
+	    android:id="@+id/item_line2"
+	    android:layout_below="@id/item_line1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@color/i_gray_line2"/>
+   <View 
+	    android:id="@+id/item_line3"
+	    android:layout_below="@id/item_line2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@color/i_gray_line3"/>
+    <View 
+	    android:id="@+id/item_back"
+	    android:layout_below="@id/item_line3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="6dp"
+	    android:background="@color/i_gray_line4"/> 
+	<!-- 新手标签 -->
+	<ImageView 
+	    android:id="@+id/project_new_user"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_above="@id/item_line1"
+	    android:visibility="gone"
+	    android:background="@drawable/new_user_tab"/>
+</RelativeLayout>

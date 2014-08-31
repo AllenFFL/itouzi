@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"
+    android:orientation="vertical" >
+    <!-- 项目列表标题栏tab -->
+        <LinearLayout
+            android:id="@+id/project_ll"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="1dp"
+            android:background="@drawable/white_corner_rectangle"
+            android:orientation="horizontal" >
+			<TextView
+                android:id="@+id/idanbao_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@drawable/white_corner_rectangle"
+                android:text="@string/idanbao_button"
+                android:textColor="@color/dark_red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/irongzu_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" 
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:background="@drawable/button_r"
+                android:text="@string/irongzu_button"
+                android:textColor="@color/i_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+         <View
+	          android:id="@+id/title_line"
+	          android:layout_width="match_parent"
+	          android:layout_height="0.5dp"
+	          android:background="@color/i_divider" />
+    <!-- 项目列表：列表 flipInterval显示下一个视图的时间间隔  -->
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/project_viewpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1.0"
+	        android:background="@color/i_gray_back"
+	        android:persistentDrawingCache="animation" >
+           </android.support.v4.view.ViewPager>
+	 <!--persistentDrawingCache 持续高 速缓存绘图  -->
+</LinearLayout>

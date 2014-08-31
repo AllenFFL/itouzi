@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_red">#d33836</color>
+    <color name="i_red">#f06160</color>
+    <color name="i_red_lock">#d53736</color>
+    <color name="i_divider">#90000000</color>
+    <color name="i_record">#80000000</color>
+    <color name="i_background">#70000000</color>
+    <color name="i_white">#ffffff</color>
+    <color name="i_white_bottom">#90ffffff</color>
+    <color name="i_black">#000000</color>
+    <color name="i_blue2">#78d0f8</color>
+    <color name="i_yellow">#ffff00</color>
+    <color name="i_blue">#5c5cff</color>
+    <color name="i_green">#00cc00</color>
+    <color name="i_money">#c0c98f</color>
+    <color name="i_gray">#666666</color>
+    <color name="i_gray_text">#999999</color>
+    <color name="i_gray_back">#f7f7f7</color>
+    <color name="i_gray_line1">#cecece</color>
+    <color name="i_gray_line2">#d7d7d7</color>
+    <color name="i_gray_line3">#e8e8e8</color>
+    <color name="i_gray_line4">#f1f1f1</color>
+</resources>

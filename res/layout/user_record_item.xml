@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/i_white">
+        <TextView
+            android:id= "@+id/record_title"
+            android:layout_width= "170dp"
+            android:layout_height ="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding= "10dp"
+            android:layout_marginLeft="10dp"
+            android:text= "投资-爱担保"
+            android:textColor= "@color/i_black"
+            android:textSize= "18sp" />
+         <TextView
+            android:id="@+id/record_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_toRightOf="@id/record_title"
+             android:gravity="right"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="2014年7月18日"
+            android:textColor="@color/i_gray_text"
+            android:textSize="18sp" />
+         <TextView
+            android:id= "@+id/record_amount"
+            android:layout_width= "wrap_content"
+            android:layout_height ="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/record_title"
+            android:padding= "10dp"
+            android:layout_marginLeft="10dp"
+            android:text= "-10,000元"
+            android:textColor= "@color/i_red"
+            android:textSize= "18sp" />
+          <TextView
+            android:id= "@+id/record_remain"
+            android:layout_width= "wrap_content"
+            android:layout_height ="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/record_date"
+            android:padding= "10dp"
+            android:layout_marginRight="10dp"
+            android:text= "余额：9,22,323,000.66元"
+            android:textColor= "@color/i_gray_text"
+            android:textSize= "18sp" />
+          <View 
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:layout_below="@id/record_amount"
+              android:background="@color/i_gray_line2"/>
+</RelativeLayout>

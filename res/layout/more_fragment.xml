@@ -1,0 +1,444 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_gray_line3"
+    android:orientation="vertical"
+    tools:context="com.allen.itouzi.MainActivity$PlaceholderFragment" >
+
+    <!-- 首页标题：爱投资 -->
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_red"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/project_more"
+        android:textColor="@color/i_white"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:id="@+id/more_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/more_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/i_gray_line3" >
+
+            <View
+                android:id="@+id/more_line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/i_gray_line2" />
+            <!-- group1手势密码 -->
+
+            <RelativeLayout
+                android:id="@+id/more_hands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/i_white" >
+
+                <ImageView
+                    android:id="@+id/more_hand"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_hand" />
+
+                <TextView
+                    android:id="@+id/more_ihand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/more_hand"
+                    android:padding="10dp"
+                    android:text="@string/more_hand"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <!-- group2 站内信 -->
+
+            <RelativeLayout
+                android:id="@+id/more_emails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_hands"
+                android:layout_marginBottom="40dp"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_email"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_email" />
+
+                <TextView
+                    android:id="@+id/more_iemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line2"
+                    android:layout_toRightOf="@id/more_email"
+                    android:padding="10dp"
+                    android:text="@string/more_email"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_iemail"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line2"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="敬请期待 >"
+                    android:textSize="20sp" />
+                 <View
+                    android:id="@+id/more_line02"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/more_iemail"
+                    android:background="@color/i_gray_line2" />
+            </RelativeLayout>
+            <!-- group3关于我们 -->
+
+            <RelativeLayout
+                android:id="@+id/more_uss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_emails"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_us"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_us" />
+
+                <TextView
+                    android:id="@+id/more_ius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line3"
+                    android:layout_toRightOf="@id/more_us"
+                    android:padding="10dp"
+                    android:text="@string/more_us"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_ius"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line3"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <!-- group4帮助中心 -->
+
+            <RelativeLayout
+                android:id="@+id/more_helps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_uss"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_help"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_help" />
+
+                <TextView
+                    android:id="@+id/more_ihelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line4"
+                    android:layout_toRightOf="@id/more_help"
+                    android:padding="10dp"
+                    android:text="@string/more_help"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_ihelp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line4"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <!-- group5客服电话 -->
+
+            <RelativeLayout
+                android:id="@+id/more_phones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_helps"
+                android:layout_marginBottom="40dp"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_phone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_phone" />
+
+                <TextView
+                    android:id="@+id/more_iphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line5"
+                    android:layout_toRightOf="@id/more_phone"
+                    android:padding="10dp"
+                    android:text="@string/more_phone"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_iphone"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line5"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="@string/more_iphone"
+                    android:textSize="20sp" />
+                 <View
+                    android:id="@+id/more_line05"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/more_iphone"
+                    android:background="@color/i_gray_line2" />
+            </RelativeLayout>
+
+            <!-- group6应用评分 -->
+
+            <RelativeLayout
+                android:id="@+id/more_scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_phones"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_score"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_score" />
+
+                <TextView
+                    android:id="@+id/more_iscore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line6"
+                    android:layout_toRightOf="@id/more_score"
+                    android:padding="10dp"
+                    android:text="@string/more_score"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_iscore"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line6"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <!-- group7意见反馈 -->
+
+            <RelativeLayout
+                android:id="@+id/more_commands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_scores"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_command"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_command" />
+
+                <TextView
+                    android:id="@+id/more_icommand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line7"
+                    android:layout_toRightOf="@id/more_command"
+                    android:padding="10dp"
+                    android:text="@string/more_command"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_icommand"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line7"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <!-- group8转给朋友 -->
+
+            <RelativeLayout
+                android:id="@+id/more_shares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_commands"
+                android:layout_marginBottom="40dp"
+                android:background="@color/i_white" >
+
+                <View
+                    android:id="@+id/more_line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/i_gray_line2" />
+
+                <ImageView
+                    android:id="@+id/more_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/more_share" />
+
+                <TextView
+                    android:id="@+id/more_ishare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_line8"
+                    android:layout_toRightOf="@id/more_share"
+                    android:padding="10dp"
+                    android:text="@string/more_share"
+                    android:textColor="@color/i_black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/more_hint8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/more_ishare"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/more_line8"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text=">"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/more_line9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/more_ishare"
+                    android:background="@color/i_gray_line2" />
+            </RelativeLayout>
+            <!-- group9退出登录 -->
+
+            <Button
+                android:id="@+id/more_btn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more_shares"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button_red"
+                android:text="登录/注册"
+                android:textColor="@color/i_white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

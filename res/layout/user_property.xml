@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_white" >
+
+    <RelativeLayout
+        android:id="@+id/property_banners"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_red"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/user_tab"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/user_tab" />
+
+        <TextView
+            android:id="@+id/property_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/user_tab"
+            android:text="@string/property_title"
+            android:textColor="@color/i_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back" />
+
+        <ListView
+            android:id="@+id/property_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/property_banners"
+            android:background="@color/i_white"
+            android:divider="@android:color/transparent" />
+
+</RelativeLayout>

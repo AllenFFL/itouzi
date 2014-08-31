@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_gray_line3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gestrue_banners"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_red" >
+
+        <ImageView
+            android:id="@+id/gestrue_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/gestrue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/gestrue_title"
+            android:textColor="@color/i_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gestrue_sets"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/i_white" >
+
+        <View
+            android:id="@+id/more_lockline1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/i_gray_line2" />
+
+        <TextView
+            android:id="@+id/more_lockset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/gestrue_setlock"
+            android:textColor="@color/i_black"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/more_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gestrue_resets"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/i_white"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/more_lockline2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/i_gray_line2" />
+
+        <TextView
+            android:id="@+id/more_lockreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/lock_reset"
+            android:textColor="@color/i_black"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/more_lockline3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/i_gray_line2" />
+    </RelativeLayout>
+
+</LinearLayout>

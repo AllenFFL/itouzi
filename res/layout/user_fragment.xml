@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_gray_line3" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/i_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_banners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_red"
+            android:gravity="left" >
+
+            <ImageView
+                android:id="@+id/user_tab"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/user_tab" />
+
+            <TextView
+                android:id="@+id/user_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/user_tab"
+                android:gravity="center"
+                android:text="@string/income_tv"
+                android:textColor="@color/i_white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/income_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_tab"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="000.00"
+                android:textColor="@color/i_white"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/income_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/income_sum"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/income_sum"
+                android:text="元"
+                android:textColor="@color/i_white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/user_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在获取信息..."
+                android:textColor="@color/i_gray_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/i_white"
+            android:orientation="vertical" >
+
+            <com.allen.itouzi.view.ChartView
+                android:id="@+id/income_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/chart_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_red"
+                android:gravity="top" >
+
+                <TextView
+                    android:id="@+id/income_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/white_corner_rectangle"
+                    android:text="年收益"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/income_mouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/income_year"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/red_corner_rectangle"
+                    android:text="月收益"
+                    android:textColor="@color/i_white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/income_remains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/i_white"
+                android:padding="20dp" >
+
+                <TextView
+                    android:id="@+id/use_remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/use_remain"
+                    android:textColor="@color/i_gray_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/use_iremain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/use_remain"
+                    android:text="00,000.00"
+                    android:textColor="@color/i_black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/remain_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/use_remain"
+                    android:text=">"
+                    android:textColor="@color/i_gray_text"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/income_line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/i_gray_line2" />
+
+            <RelativeLayout
+                android:id="@+id/income_totals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/i_white"
+                android:padding="20dp" >
+
+                <TextView
+                    android:id="@+id/total_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/total_money"
+                    android:textColor="@color/i_gray_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/total_imoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/total_money"
+                    android:text="00,000.00"
+                    android:textColor="@color/i_black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/total_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/total_money"
+                    android:text=">"
+                    android:textColor="@color/i_gray_text"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/income_line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/i_gray_line2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

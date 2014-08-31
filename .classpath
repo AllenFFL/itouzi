@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/alibaba.jar"/>
+	<classpathentry kind="lib" path="libs/umeng-analytics-v5.2.4.jar"/>
+	<classpathentry kind="lib" path="libs/umeng-fb-v4.3.2.jar"/>
+	<classpathentry kind="lib" path="libs/umeng-update-v2.4.2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_WeiXin_2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_sms.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_email.jar"/>
+	<classpathentry kind="lib" path="libs/jpush-sdk-release1.6.3.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_QQZone_3.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_tencentWB_1.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_tencentWB_2.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_tencentWB_3.jar"/>
+	<classpathentry kind="lib" path="libs/SocialSDK_Sina.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

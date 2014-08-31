@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/i_gray_back" >
+
+    <RelativeLayout
+        android:id="@+id/invest_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_red" >
+
+        <ImageView
+            android:id="@+id/invest_back"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/invest_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/user_invest"
+            android:textColor="@color/i_white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/invest_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/invest_banner"
+        android:layout_marginTop="50dp"
+        android:background="@color/i_gray_line1" />
+
+    <RelativeLayout
+        android:id="@+id/invest_amounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invest_line"
+        android:background="@color/i_white" >
+
+        <TextView
+            android:id="@+id/invest_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/i_white"
+            android:gravity="right"
+            android:text="投资金额(元)"
+            android:textColor="@color/i_black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/invest_iamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/invest_amount"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/invest_amount"
+            android:background="@color/i_white"
+            android:textColor="@color/i_black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/invest_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/invest_amount"
+            android:background="@color/i_gray_line1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/invest_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invest_amounts"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="该项目可投金额1000000元，起投金额10000元，递增投资金额10000元"
+        android:textColor="@color/i_gray_text"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/invest_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invest_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_red"
+        android:text="立即投资"
+        android:textColor="@color/i_white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
